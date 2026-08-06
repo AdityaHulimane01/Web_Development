@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Test CSS</title>
+    <style>
+        :root {
+            --colore: rgb(149, 255, 239);
+            --seccolore: antiquewhite;
+            --defpad: 23px;
+            --defmarg: 0px
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            color: rgb(22, 163, 161);
+            background-color: var(--seccolore);
+            /* /* used the our created variable in root that can be applicable for all directly instead 
+        of changing the characteristics of all things we can use the variables. we can make variable of any name by giving(--) in front of it */
+        }
+
+        ul :first-child {
+            background-color: var(--colore);
+            /* same for this */
+        }
+
+        li {
+            padding: var(--defpad);
+            /* same for this */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Profile</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
