@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATIONS</title>
+    <style>
+        .container {
+            height: 50vh;
+            width: 50vw;
+            background-color: yellow;
+        }
+
+        .box {
+            height: 5vh;
+            width: 5vw;
+            background-color: red;
+            align-content: center;
+            animation: style1 3s cubic-bezier(0, 0.97, 0.63, 0.98) 1s infinite;
+        }
+
+        span {
+            margin-left: 20px;
+        }
+
+        @keyframes style1 {
+            from {}
+
+            to {
+                transform: translateX(690px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <Span>BOX</Span>
+        </div>
+    </div>
+</body>
+
+</html>
