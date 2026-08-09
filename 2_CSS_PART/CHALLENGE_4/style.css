@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* :root {
+    --mypadd: 3px;
+    --mymarg: 15px;
+    --myliststyle: none;
+    --mydisplay: flex;
+    --mycolor: white;
+    --mynavcolor: rgb(0, 0, 255);
+    --myborder: 2px;
+    --myborderradius: 115px;
+    --myheight: 5px;
+    --mywidth: 65px;
+    --mytextallign: center;
+    --mybottomMargine:3vh;
+    --mybackgroundcolor: rgb(94, 157, 212);
+} */
+
+/* :root {
+    --mypadd: 3px;
+    --mymarg: 15px;
+    --myliststyle: none;
+    --mydisplay: flex;
+    --mycolor: white;
+    --mynavcolor: rgb(255, 0, 0);
+    --myborder: 2px;
+    --myborderradius: 115px;
+    --myheight: 5px;
+    --mywidth: 65px;
+    --mytextallign: center;
+    --mybottomMargine:3vh;
+    --mybackgroundcolor: rgb(255, 137, 137);
+} */
+/* This is multicolor website there are two styles uncomment one at a time and you can see the both :root are represents the differ designs */
+/*  by this we can say that the (CSS Variables) can be used for doing this type of things like multicolor Websites */
+nav {
+    background-color: var(--mynavcolor);
+    border: var(--myborder);
+    border-radius: var(--myborderradius);
+}
+body{
+    background-color: var(--mybackgroundcolor);
+}
+ul {
+    list-style: var(--myliststyle);
+    display: var(--mydisplay);
+}
+
+li {
+    margin: var(--mymarg);
+    padding: var(--mypadd);
+    color: var(--mycolor);
+    border: var(--myborder);
+    border-radius: var(--myborderradius);
+    height: var(--myheight);
+    width: var(--mywidth);
+    margin-bottom: var(--mybottomMargine);
+}
+
