@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear Properties</title>
+    <style>
+        img{
+            float: left;
+            /* we can make any image or other thing to float at right or the left of the texts */
+        }
+        .box{
+            border: 2px solid black;
+        }
+        div{
+            border: 2px solid red;
+        }
+        div :nth-child(2){
+            clear: left;
+            /* by using this clear:left we can remove the image from that perticular paragraph block */
+            /* we used this property for the second paragraph so it removed the part of image overlapping on the empty space of paragraph */
+            /* if we removed this keyword image again overlaps (TRY IT AND CHECK FOR BETTER UNDERSTANDINGS) */
+                }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="class"><img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" width="400px" alt="">
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit, earum provident
+            cumque, laudantium
+            tempore porro hic maiores voluptas ut eveniet vitae quo quaerat consectetur laboriosam excepturi pariatur
+            libero illum ullam! Eaque
+            ea illum nam? Ipsa explicabo quasi quaerat praesentium earum tempora consectetur voluptate corporis maiores
+            error recusandae impedit,
+            quos quisquam quas tenetur, dolores dolor reiciendis excepturi? Possimus aliquid nulla maiores dicta
+            assumenda necessitatibus magni,
+            odit atque veritatis sapiente. Adipisci praesentium recusandae, odit nobis voluptate beatae nostrum expedita
+            esse mollitia, eos neque
+            illo molestias dolorem quas tenetur, est id! Laudantium qui illum similique ipsam optio enim quod aliquam
+            vitae saepe!
+        </div>
+
+        <div class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perferendis fugit porro
+            eum numquam ea
+            maiores dolorum reprehenderit quaerat! Minima voluptatum consequatur et eius iste, ipsum nisi nesciunt illum
+            culpa dolorum facere
+            ab qui natus explicabo itaque odit, sit est suscipit vitae! Dolor officia sed alias perspiciatis sit fugit
+            maxime maiores, a
+            excepturi magni cum facere nam minima in dicta fuga vel? Aliquid, eum nemo? Nobis suscipit accusamus dicta
+            dolorum ducimus nam
+            velit ipsam qui in maxime incidunt architecto sint id quis culpa, recusandae libero consectetur, minima
+            rerum tenetur asperiores.
+            Quos eveniet laboriosam ipsa, natus reiciendis saepe quisquam magni.</div>
+
+        <div class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perferendis fugit porro
+            eum numquam ea
+            maiores dolorum reprehenderit quaerat! Minima voluptatum consequatur et eius iste, ipsum nisi nesciunt illum
+            culpa dolorum facere
+            ab qui natus explicabo itaque odit, sit est suscipit vitae! Dolor officia sed alias perspiciatis sit fugit
+            maxime maiores, a
+            excepturi magni cum facere nam minima in dicta fuga vel? Aliquid, eum nemo? Nobis suscipit accusamus dicta
+            dolorum ducimus nam
+            velit ipsam qui in maxime incidunt architecto sint id quis culpa, recusandae libero consectetur, minima
+            rerum tenetur asperiores.
+            Quos eveniet laboriosam ipsa, natus reiciendis saepe quisquam magni.</div>
+    </div>
+</body>
+
+</html>
