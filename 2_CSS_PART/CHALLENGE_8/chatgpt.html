@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Realistic Bounce</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f2f2f2;
+    }
+
+    .container {
+      position: relative;
+      height: 60vh;
+      width: 80vw;
+      background: lightyellow;
+      overflow: hidden;
+    }
+
+    .ball {
+      height: 70px;
+      width: 70px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      animation: realBounce 3s ease-in-out infinite;
+    }
+
+    @keyframes realBounce {
+      0% {
+        bottom: 0;
+        left: 0;
+      }
+      10% {
+        bottom: 50vh;
+      }
+      20% {
+        bottom: 0;
+        left: 15vw;
+      }
+      30% {
+        bottom: 30vh;
+      }
+      40% {
+        bottom: 0;
+        left: 30vw;
+      }
+      50% {
+        bottom: 20vh;
+      }
+      60% {
+        bottom: 0;
+        left: 45vw;
+      }
+      70% {
+        bottom: 10vh;
+      }
+      80% {
+        bottom: 0;
+        left: 60vw;
+      }
+      90% {
+        bottom: 5vh;
+      }
+      100% {
+        bottom: 0;
+        left: 75vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ball"></div>
+  </div>
+</body>
+</html>

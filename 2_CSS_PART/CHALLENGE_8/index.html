@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLENGE 8</title>
+    <style>
+        .container {
+            height: 70vh;
+            width: 80vw;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .ball {
+            height: 70px;
+            width: 70px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: styleX 3s linear infinite, styleY 1s alternate ease-out infinite;
+        }
+
+        @keyframes styleX {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes styleY {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
