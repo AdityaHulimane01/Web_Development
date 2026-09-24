@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 100px;
+        width: 800px;
+        margin: 15px;
+        padding: 15px;
+        background-color: orange;
+    }
+
+    .childContainer{
+       
+        height: 50px;
+        width: 450px;
+        margin: 15px;
+        padding: 15px;
+        background-color: aqua;
+    }
+
+    .child{
+        height: 25px;
+        width: 350px;
+        margin: 15px;
+        background-color: blanchedalmond;
+    }
+    
+    
+</style>
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                Hey iam child
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener('click' , (e) =>{
+             // e.stopPropagation
+              alert("The child was clicked")
+        } )
+
+         document.querySelector(".childContainer").addEventListener('click' , (e) =>{
+             // e.stopPropagation
+              alert("The childContainer was clicked")
+        } )
+
+         document.querySelector(".container").addEventListener('click' , (e) =>{
+                 // e.stopPropagation
+              alert("The container was clicked")
+        } )
+        // If you uncomment these e.stopPropagation then the at a time only one alert will be shown 
+        //this multiple firing of the events by child upto its parent is called the event Bubbling
+
+        //runs again and again after interval of time
+        setInterval(() => {
+             document.querySelector(".childContainer").style.background = "red"
+        } , 3000)
+
+        //runs only 1 time
+        setTimeout(() => {
+             document.querySelector(".container").style.background = "blue"
+        } , 3000);
+
+        // clear interval and clear timeout funcs can be used to remove them
+    </script>
+</body>
+</html>
