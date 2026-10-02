@@ -1,0 +1,42 @@
+.card{
+    display: flex;
+    border: 2px solid black;
+    width: 1000px;
+    height: 120px;
+    background-color: rgb(29, 28, 28);
+    border-radius: 6px;
+     padding-left: 7px;
+    align-items: center;
+    margin: 5px;
+}
+ .thumbnail img{
+    width: 200px;
+    height: 110px;
+    border-radius: 7px;
+    display: flex;
+}
+
+.image{
+      position: relative;
+}
+
+.capsule{
+    position: absolute;
+    bottom: 3px;
+    right: 8px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+}
+h1{
+    margin: 10px;
+
+    font-size:x-large;
+    color: white;
+}
+p{
+   font-size: small;
+    margin-left: 10px;
+    color: white;
+}
