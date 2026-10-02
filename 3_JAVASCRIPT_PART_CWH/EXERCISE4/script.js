@@ -1,0 +1,5 @@
+document.body.children[0].children[0].style.backgroundColor = "Red"
+document.body.children[0].children[1].style.backgroundColor = "Green"
+document.body.children[0].children[2].style.backgroundColor = "Blue"
+document.body.children[0].children[3].style.backgroundColor = "Yellow"
+document.body.children[0].children[4].style.backgroundColor = "pink"
