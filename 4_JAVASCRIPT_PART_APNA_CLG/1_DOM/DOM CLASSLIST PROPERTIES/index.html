@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>classList Practice</title>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔹 Element -->
+    <p id="text">Hello World</p>
+
+    <!-- 🔹 Button -->
+    <button onclick="changeStyle()">Click Me</button>
+
+    <script>
+        function changeStyle() {
+
+            // 🔹 SELECT ELEMENT
+            var el = document.querySelector("#text");
+
+
+            // ===============================
+            // 🔹 ADD CLASS
+            // ===============================
+            el.classList.add("red");
+            // adds red color
+
+
+            // ===============================
+            // 🔹 REMOVE CLASS
+            // ===============================
+            el.classList.remove("big");
+            // removes big class if present
+
+
+            // ===============================
+            // 🔹 TOGGLE CLASS
+            // ===============================
+            el.classList.toggle("big");
+            // adds if not present, removes if present
+
+
+            // ===============================
+            // 🔹 CHECK CLASS
+            // ===============================
+            var hasClass = el.classList.contains("red");
+            console.log(hasClass);
+            // true or false
+        }
+
+        // 🔹 QUICK NOTES
+        // add() → add class
+        // remove() → remove class
+        // toggle() → add/remove automatically
+        // contains() → check class
+    </script>
+
+</body>
+</html>

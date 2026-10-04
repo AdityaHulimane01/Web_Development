@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Selector Practice</title>
+</head>
+<body>
+
+    <!-- 🔹 ID -->
+    <h1 id="heading">Hello</h1>
+
+    <!-- 🔹 Class -->
+    <p class="text">First</p>
+    <p class="text">Second</p>
+
+    <!-- 🔹 Tag -->
+    <h2>Tag 1</h2>
+    <h2>Tag 2</h2>
+
+    <!-- 🔹 Button -->
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+
+            // 🔹 querySelector with ID
+            var el1 = document.querySelector("#heading");
+            el1.innerText = "Changed by ID";
+
+
+            // 🔹 querySelector with class
+            var el2 = document.querySelector(".text");
+            // selects FIRST element with class "text"
+            el2.innerText = "Changed by Class";
+
+
+            // 🔹 querySelector with tag
+            var el3 = document.querySelector("h2");
+            // selects FIRST <h2>
+            el3.innerText = "Changed by Tag";
+
+
+            // 🔹 querySelectorAll (multiple elements)
+            var el4 = document.querySelectorAll(".text");
+            // returns all elements with class "text"
+
+            el4[1].innerText = "Second Changed";
+        }
+
+        // 🔹 IMPORTANT NOTES
+        // querySelector() → returns FIRST matching element
+        // querySelectorAll() → returns ALL matching elements
+        // Use # for ID, . for class, tag name directly
+    </script>
+
+</body>
+</html>

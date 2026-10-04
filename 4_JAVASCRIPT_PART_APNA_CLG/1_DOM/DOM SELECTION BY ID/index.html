@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM ID Practice</title>
+</head>
+<body>
+
+    <!-- 🔹 Element with ID -->
+    <h1 id="heading">Hello</h1>
+
+    <!-- 🔹 Button -->
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        // 🔹 FUNCTION TO CHANGE TEXT
+        function changeText() {
+
+            // Select element using ID
+            var element = document.getElementById("heading");
+
+            // Change the text of that element
+            element.innerText = "Text Changed!";
+        }
+
+        // 🔹 IMPORTANT NOTES
+        // getElementById("id") → selects element
+        // innerText → used to change text
+    </script>
+
+</body>
+</html>

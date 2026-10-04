@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Tag Practice</title>
+</head>
+<body>
+
+    <!-- 🔹 Multiple elements with same tag -->
+    <h2>Hello 1</h2>
+    <h2>Hello 2</h2>
+    <h2>Hello 3</h2>
+
+    <!-- 🔹 Button -->
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        // 🔹 FUNCTION TO CHANGE TEXT
+        function changeText() {
+
+            // Select elements using tag name
+            var elements = document.getElementsByTagName("h2");
+
+            // elements is a collection (like array)
+
+            // Change text of first element
+            elements[0].innerText = "Changed!";
+        }
+
+        // 🔹 IMPORTANT NOTES
+        // getElementsByTagName("tag") → selects elements by tag
+        // Returns multiple elements (collection)
+        // Access using index → elements[0]
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Attribute Practice</title>
+</head>
+<body>
+
+    <!-- 🔹 Image with real online link -->
+    <img id="myImage" src="https://picsum.photos/200" width="200">
+
+    <!-- 🔹 Button -->
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage() {
+
+            // 🔹 SELECT IMAGE
+            var img = document.querySelector("#myImage");
+
+
+            // 🔹 CHANGE IMAGE (random new image)
+            img.setAttribute("src", "https://picsum.photos/300");
+
+
+            // 🔹 GET ATTRIBUTE
+            var value = img.getAttribute("src");
+            console.log(value);
+
+
+            // 🔹 REMOVE ATTRIBUTE
+            img.removeAttribute("alt");
+
+
+            // 🔹 DIRECT METHOD (shortcut)
+            img.src = "https://picsum.photos/250";
+        }
+    </script>
+
+</body>
+</html>

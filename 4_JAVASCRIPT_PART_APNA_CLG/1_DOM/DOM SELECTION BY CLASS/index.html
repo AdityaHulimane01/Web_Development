@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Class Practice</title>
+</head>
+<body>
+
+    <!-- 🔹 Multiple elements with same class -->
+    <p class="text">First</p>
+    <p class="text">Second</p>
+    <p class="text">Third</p>
+
+    <!-- 🔹 Button -->
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        // 🔹 FUNCTION TO CHANGE TEXT
+        function changeText() {
+
+            // Select elements using class name
+            var elements = document.getElementsByClassName("text");
+
+            // elements is a collection (like array)
+
+            // Change text of first element
+            elements[0].innerText = "Changed!";
+        }
+
+        // 🔹 IMPORTANT NOTES
+        // getElementsByClassName("class") → selects multiple elements
+        // Returns a collection (use index like [0], [1])
+    </script>
+
+</body>
+</html>
