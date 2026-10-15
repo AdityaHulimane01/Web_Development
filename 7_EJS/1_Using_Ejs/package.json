@@ -1,0 +1,17 @@
+{
+  "name": "1-using-ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Aditya",
+  "license": "ISC",
+  "type": "commonjs"
+}
