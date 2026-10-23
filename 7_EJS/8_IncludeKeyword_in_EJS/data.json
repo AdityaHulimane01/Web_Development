@@ -1,0 +1,46 @@
+{
+  "cats": {
+    "name": "cats",
+    "followers": 25000,
+    "following": 5,
+    "posts": [
+      {
+        "image": "https://placecats.com/800/600",
+        "likes": 200,
+        "comments": 17
+      },
+      {
+        "image": "https://placecats.com/millie/800/600",
+        "likes": 312,
+        "comments": 19
+      },
+      {
+        "image": "https://placecats.com/neo/800/600",
+        "likes": 1065,
+        "comments": 200
+      }
+    ]
+  },
+  "dogs": {
+    "name": "dogs",
+    "followers": 18500,
+    "following": 12,
+    "posts": [
+      {
+        "image": "https://placedog.net/800/600?id=182",
+        "likes": 245,
+        "comments": 21
+      },
+      {
+        "image": "https://placedog.net/800/600?id=15",
+        "likes": 398,
+        "comments": 34
+      },
+      {
+        "image": "https://placedog.net/800/600?id=7",
+        "likes": 1120,
+        "comments": 186
+      }
+    ]
+  }
+}
