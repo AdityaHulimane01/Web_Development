@@ -1,0 +1,10 @@
+USE temp_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id VARCHAR(50) PRIMARY KEY,
+    username VARCHAR(200) NOT NULL UNIQUE,
+    email VARCHAR(200) NOT NULL UNIQUE,
+    password varchar(100) NOT NULL UNIQUE
+);
+
+SELECT * FROM users;
