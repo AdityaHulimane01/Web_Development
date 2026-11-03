@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Assets/images/bg.jpg);
+    height: 85vh;
+    position: relative;
+}
+
+.main .box {
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    height: 85vh;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+img {
+    height: 100px;
+    width: 130px;
+
+}
+
+nav {
+    display: flex;
+    align-content: center;
+
+    margin: auto;
+    max-width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.buttons {
+    height: 25px;
+
+    display: flex;
+    gap: 5px;
+}
+
+.selector {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 65px;
+    height: 30px;
+    font-family: "poppins", sans-serif;
+}
+
+.signin {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    width: 65px;
+    height: 30px;
+    font-family: "poppins", sans-serif;
+}
+
+.line {
+    height: 7px;
+    background-color: rgb(45, 45, 45);
+    z-index: 5;
+}
+
+.hero {
+    color: white;
+    height: calc(100% - 100px);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero :nth-child(1) {
+    font-size: xx-large;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+}
+
+.hero :nth-child(2) {
+    font-size: large;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+
+.hero :nth-child(3) {
+    font-size: large;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+
+.input {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    gap: 10px;
+    margin-top: -90px;
+}
+
+.input input {
+    height: 35px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.527);
+    border: 1px solid rgb(101, 101, 101);
+    border-radius: 5px;
+    font-family: "poppins", sans-serif;
+    padding-left: 10px;
+}
+
+.input button {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    width: 150px;
+    font-family: "poppins", sans-serif;
+    font-size: larger;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.text2 {
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    align-items: start;
+    justify-content: center;
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.text4 {
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    align-items: start;
+    justify-content: center;
+}
+
+.section1 {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+.section1 :nth-child(1) {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.section1 :nth-child(2) {
+    font-size: large;
+    font-weight: 400;
+}
+
+.section1 :nth-child(3) {
+    font-size: large;
+    font-weight: 400;
+}
+
+.diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap1 {
+    position: relative;
+}
+
+.wrap1 img {
+    width: 300px;
+    height: auto;
+    display: block;
+    z-index: 4;
+}
+
+.wrap1 video {
+    position: absolute;
+    top: 47px;
+    left: 40px;
+    width: 220px;
+    height: 125px;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75vh;
+    max-width: 80vw;
+    margin: auto;
+    gap: 30px;
+}
+
+.text2 :nth-child(1) {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.text2 :nth-child(2) {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.text2 :nth-child(3) {
+    font-size: large;
+    font-weight: 400;
+}
+
+.diagram2 img {
+    height: 270px;
+    width: 350px;
+}
+
+.diagram2 {
+    align-content: center;
+}
+
+.section3 {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+.section3 :nth-child(1) {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.section3 :nth-child(2) {
+    font-size: large;
+    font-weight: 400;
+}
+
+.section3 :nth-child(3) {
+    font-size: large;
+    font-weight: 400;
+}
+
+.diagram3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .wrap3 {
+    position: relative;
+}
+
+.section3 .wrap3 img {
+    width: 300px;
+    height: auto;
+    display: block;
+    z-index: 4;
+}
+
+.wrap3 video {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 215px;
+    height: 120px;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75vh;
+    max-width: 80vw;
+    margin: auto;
+    gap: 30px;
+}
+
+.text4 :nth-child(1) {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.text4 :nth-child(2) {
+    font-size: large;
+    font-weight: 400;
+}
+
+.text4 :nth-child(3) {
+    font-size: large;
+    font-weight: 400;
+}
+
+.diagram4 img {
+    height: 270px;
+    width: 350px;
+}
+
+.diagram4 {
+    align-content: center;
+}
+
+.section5 {
+    height: 100vh;
+    font-family: "poppins",sans-serif;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 800;
+}
+.section5 div{
+color: white;
+}
+.section5 .boxes{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     gap: 30px;
+}
+.gap{
+    height: 60px;
+}
+.section5 .boxes div{
+      height: 60px;
+      width: 800px;
+     background-color: #2d2d2d;
+     font-size: x-large;
+     align-items: center;
+     display: flex;
+     padding-left: 20px;
+}
+
+.section6{
+    height: 60vh;
+    color: white;
+    font-family: "poppins",sans-serif;
+}
+.column1{
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+}
+.column2{
+    display: flex;
+ flex-direction: column;
+  gap: 40px;
+}
+.column3{
+    display: flex;
+ flex-direction: column;
+  gap: 40px;
+}
+.column4{
+    display: flex;
+ flex-direction: column;
+  gap: 40px;
+}
+.row{
+     display: flex;
+    flex-direction: row;
+    gap: 120px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 60vh;
+}
+a{
+    color: white;
+}
+.heading {
+   position: relative;
+   top: 40px;
+   left: 170px;
+   z-index: 3;
+}
+.section5 .boxes :hover{
+    background-color:#393939 ;
+}
